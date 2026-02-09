@@ -4,8 +4,8 @@ Suite Setup             Open Browser        https://chiangmuan.igovapp.com/   ch
 Suite Teardown          Close Browser
 
 *** Variables ***
-${Email}                @gmail.com
-${Password}             ####
+${Email}                naysasatadur5555@gmail.com
+${Password}             B@om1869900601590
 
 
 *** Keywords ***
@@ -29,5 +29,8 @@ Input standard
     Input Email
     Input Password
     Click Login2 Button
-
+    sleep   8s
+    Wait Until Page Contains    ยินดีต้อนรับ
+    sleep   2s
+    Capture Page Screenshot     login_success.png
 

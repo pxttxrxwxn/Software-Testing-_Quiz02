@@ -5,7 +5,7 @@ Suite Teardown          Close Browser
 
 *** Variables ***
 ${Email}                @gmail.com
-${Password}             ##
+${Password}             #####
 
 
 

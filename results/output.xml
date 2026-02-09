@@ -1,151 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.2 on win32)" generated="2026-02-09T15:24:01.860588" rpa="false" schemaversion="5">
-<suite id="s1" name="Software-Testing- Quiz02" source="D:\up\ปี2\Software Testing\robotframework\Software-Testing-_Quiz02">
-<suite id="s1-s1" name="testRF02" source="D:\up\ปี2\Software Testing\robotframework\Software-Testing-_Quiz02\testRF02.robot">
+<robot generator="Robot 7.4.1 (Python 3.13.2 on win32)" generated="2026-02-09T16:41:52.399168" rpa="false" schemaversion="5">
+<suite id="s1" name="Software-Testing- Quiz02" source="d:\up\ปี2\Software Testing\robotframework\Software-Testing-_Quiz02">
+<suite id="s1-s1" name="Login" source="d:\up\ปี2\Software Testing\robotframework\Software-Testing-_Quiz02\Login.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2026-02-09T15:24:02.536311" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<msg time="2026-02-09T16:41:52.746634" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
 <arg>https://chiangmuan.igovapp.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-09T15:24:02.535148" elapsed="2.608929"/>
+<status status="PASS" start="2026-02-09T16:41:52.746229" elapsed="3.027545"/>
 </kw>
-<test id="s1-s1-t1" name="Input standard" line="60">
+<test id="s1-s1-t1" name="Input standard" line="25">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-09T15:24:08.153635" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
+<msg time="2026-02-09T16:42:00.783210" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-09T15:24:05.152780" elapsed="3.001259"/>
+<status status="PASS" start="2026-02-09T16:41:55.781806" elapsed="5.002175"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T15:24:08.156270" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/div/a[1]'.</msg>
-<msg time="2026-02-09T15:24:12.283594" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6de7ff3d5
-	0x7ff6de7ff430
-	0x7ff6de5a10bd
-	0x7ff6de577c22
-	0x7ff6de62d2a6
-	0x7ff6de649652
-	0x7ff6de5ecb0c
-	0x7ff6de5eda53
-	0x7ff6deadb470
-	0x7ff6dead586d
-	0x7ff6deaf621a
-	0x7ff6de81b235
-	0x7ff6de823a5c
-	0x7ff6de808844
-	0x7ff6de8089f6
-	0x7ff6de7eeb87
-	0x7ffc852ae8d7
-	0x7ffc8666c53c
-</msg>
-<msg time="2026-02-09T15:24:12.335927" level="FAIL">Element with locator '//*[@id="root"]/div/nav/header/div/a[1]' not found.</msg>
+<msg time="2026-02-09T16:42:00.787633" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/div/a[1]'.</msg>
 <arg>//*[@id="root"]/div/nav/header/div/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-02-09T15:24:08.155498" elapsed="4.207354">Element with locator '//*[@id="root"]/div/nav/header/div/a[1]' not found.</status>
+<status status="PASS" start="2026-02-09T16:42:00.786706" elapsed="1.156024"/>
 </kw>
-<status status="FAIL" start="2026-02-09T15:24:08.154840" elapsed="4.208632">Element with locator '//*[@id="root"]/div/nav/header/div/a[1]' not found.</status>
+<status status="PASS" start="2026-02-09T16:42:00.785745" elapsed="1.157448"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T16:42:03.944786" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-09T15:24:12.364116" elapsed="0.000380"/>
+<status status="PASS" start="2026-02-09T16:42:01.943742" elapsed="2.001678"/>
 </kw>
 <kw name="Input Email">
-<status status="NOT RUN" start="2026-02-09T15:24:12.365372" elapsed="0.000353"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:42:03.948405" level="INFO">Typing text 'naysasatadur5555@gmail.com' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:42:03.947598" elapsed="0.211888"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:42:03.946553" elapsed="0.213123"/>
 </kw>
 <kw name="Input Password">
-<status status="NOT RUN" start="2026-02-09T15:24:12.366388" elapsed="0.000310"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:42:04.161679" level="INFO">Typing text 'B@om1869900601590' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:42:04.161346" elapsed="0.174767"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:42:04.160325" elapsed="0.175956"/>
 </kw>
 <kw name="Click Login2 Button">
-<status status="NOT RUN" start="2026-02-09T15:24:12.367281" elapsed="0.000377"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:42:04.337908" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:42:04.337461" elapsed="0.090611"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:42:04.336812" elapsed="0.091564"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>7s</arg>
+<msg time="2026-02-09T16:42:12.429933" level="INFO">Slept 8 seconds.</msg>
+<arg>8s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-09T15:24:12.368463" elapsed="0.000446"/>
+<status status="PASS" start="2026-02-09T16:42:04.428929" elapsed="8.001900"/>
 </kw>
-<kw name="Click health database Button">
-<status status="NOT RUN" start="2026-02-09T15:24:12.369660" elapsed="0.000283"/>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ยินดีต้อนรับ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:42:12.432123" elapsed="0.031231"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T16:42:14.466257" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-09T15:24:12.370465" elapsed="0.000347"/>
+<status status="PASS" start="2026-02-09T16:42:12.464366" elapsed="2.003398"/>
 </kw>
-<kw name="Click Health examination history Button">
-<status status="NOT RUN" start="2026-02-09T15:24:12.372282" elapsed="0.000632"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:42:14.573142" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_success.png"&gt;&lt;img src="login_success.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>login_success.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-09T16:42:14.469207" elapsed="0.104603"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-09T15:24:12.373962" elapsed="0.000341"/>
-</kw>
-<kw name="Click examine Button">
-<status status="NOT RUN" start="2026-02-09T15:24:12.374827" elapsed="0.000236"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-09T15:24:12.375415" elapsed="0.000213"/>
-</kw>
-<kw name="Click Take an assessment Button">
-<status status="NOT RUN" start="2026-02-09T15:24:12.376199" elapsed="0.000270"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-09T15:24:12.376989" elapsed="0.000321"/>
-</kw>
-<status status="FAIL" start="2026-02-09T15:24:05.144792" elapsed="7.233404">Element with locator '//*[@id="root"]/div/nav/header/div/a[1]' not found.</status>
+<status status="PASS" start="2026-02-09T16:41:55.774103" elapsed="18.800302"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-09T15:24:12.404735" elapsed="2.145274"/>
+<status status="PASS" start="2026-02-09T16:42:14.581427" elapsed="2.312303"/>
 </kw>
-<status status="FAIL" start="2026-02-09T15:24:01.969373" elapsed="12.580916"/>
+<status status="PASS" start="2026-02-09T16:41:52.470335" elapsed="24.423648"/>
 </suite>
-<status status="FAIL" start="2026-02-09T15:24:01.872398" elapsed="12.685910"/>
+<status status="PASS" start="2026-02-09T16:41:52.411352" elapsed="24.488624"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Software-Testing- Quiz02" id="s1" pass="0" fail="1" skip="0">Software-Testing- Quiz02</stat>
-<stat name="testRF02" id="s1-s1" pass="0" fail="1" skip="0">Software-Testing- Quiz02.testRF02</stat>
+<stat name="Software-Testing- Quiz02" id="s1" pass="1" fail="0" skip="0">Software-Testing- Quiz02</stat>
+<stat name="Login" id="s1-s1" pass="1" fail="0" skip="0">Software-Testing- Quiz02.Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-02-09T15:24:12.283594" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6de7ff3d5
-	0x7ff6de7ff430
-	0x7ff6de5a10bd
-	0x7ff6de577c22
-	0x7ff6de62d2a6
-	0x7ff6de649652
-	0x7ff6de5ecb0c
-	0x7ff6de5eda53
-	0x7ff6deadb470
-	0x7ff6dead586d
-	0x7ff6deaf621a
-	0x7ff6de81b235
-	0x7ff6de823a5c
-	0x7ff6de808844
-	0x7ff6de8089f6
-	0x7ff6de7eeb87
-	0x7ffc852ae8d7
-	0x7ffc8666c53c
-</msg>
 </errors>
 </robot>
