@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.2 on win32)" generated="2026-02-09T15:23:41.255282" rpa="false" schemaversion="5">
+<suite id="s1" name="testRF02" source="D:\up\ปี2\Software Testing\robotframework\Software-Testing-_Quiz02\testRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-09T15:23:41.485680" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<arg>https://chiangmuan.igovapp.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-09T15:23:41.485459" elapsed="2.428841"/>
+</kw>
+<test id="s1-t1" name="Input standard" line="60">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T15:23:46.916546" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-09T15:23:43.915291" elapsed="3.001491"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:23:46.919365" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/div/a[1]'.</msg>
+<msg time="2026-02-09T15:23:52.129535" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901/screenshot</msg>
+<msg time="2026-02-09T15:23:56.202827" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901/screenshot</msg>
+<msg time="2026-02-09T15:24:00.272266" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901/screenshot</msg>
+<msg time="2026-02-09T15:24:04.397990" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=51140): Max retries exceeded with url: /session/eb03c8d6e9372f940bc86275e9555901/screenshot (Caused by NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))</msg>
+<msg time="2026-02-09T15:24:04.398619" level="FAIL">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</msg>
+<arg>//*[@id="root"]/div/nav/header/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-09T15:23:46.918578" elapsed="17.832004">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</status>
+</kw>
+<status status="FAIL" start="2026-02-09T15:23:46.917671" elapsed="17.833213">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:24:04.751426" elapsed="0.000054"/>
+</kw>
+<kw name="Input Email">
+<status status="NOT RUN" start="2026-02-09T15:24:04.751816" elapsed="0.000053"/>
+</kw>
+<kw name="Input Password">
+<status status="NOT RUN" start="2026-02-09T15:24:04.752116" elapsed="0.000031"/>
+</kw>
+<kw name="Click Login2 Button">
+<status status="NOT RUN" start="2026-02-09T15:24:04.752436" elapsed="0.000041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:24:04.752823" elapsed="0.000057"/>
+</kw>
+<kw name="Click health database Button">
+<status status="NOT RUN" start="2026-02-09T15:24:04.753414" elapsed="0.000063"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:24:04.755603" elapsed="0.000095"/>
+</kw>
+<kw name="Click Health examination history Button">
+<status status="NOT RUN" start="2026-02-09T15:24:04.756569" elapsed="0.000098"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:24:04.757628" elapsed="0.000085"/>
+</kw>
+<kw name="Click examine Button">
+<status status="NOT RUN" start="2026-02-09T15:24:04.758176" elapsed="0.000063"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:24:04.758460" elapsed="0.000038"/>
+</kw>
+<kw name="Click Take an assessment Button">
+<status status="NOT RUN" start="2026-02-09T15:24:04.759196" elapsed="0.000075"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:24:04.759818" elapsed="0.000068"/>
+</kw>
+<status status="FAIL" start="2026-02-09T15:23:43.914580" elapsed="20.845774">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-09T15:24:08.860757" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901</msg>
+<msg time="2026-02-09T15:24:12.954325" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901</msg>
+<msg time="2026-02-09T15:24:17.086349" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901</msg>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-09T15:24:04.762925" elapsed="16.470600"/>
+</kw>
+<status status="FAIL" start="2026-02-09T15:23:41.256792" elapsed="39.976868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testRF02" id="s1" pass="0" fail="1" skip="0">testRF02</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-09T15:23:52.129535" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901/screenshot</msg>
+<msg time="2026-02-09T15:23:56.202827" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901/screenshot</msg>
+<msg time="2026-02-09T15:24:00.272266" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901/screenshot</msg>
+<msg time="2026-02-09T15:24:04.397990" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=51140): Max retries exceeded with url: /session/eb03c8d6e9372f940bc86275e9555901/screenshot (Caused by NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))</msg>
+<msg time="2026-02-09T15:24:08.860757" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901</msg>
+<msg time="2026-02-09T15:24:12.954325" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901</msg>
+<msg time="2026-02-09T15:24:17.086349" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51140): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/eb03c8d6e9372f940bc86275e9555901</msg>
+</errors>
+</robot>
